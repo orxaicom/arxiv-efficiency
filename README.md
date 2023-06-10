@@ -13,6 +13,10 @@ arXiv categories covered:
 
 ## June 2023
 
+### 10
+
+* No new papers on arXiv
+
 ### 9
 
 * [Catapults in SGD: spikes in the training loss and their impact on generalization through feature learning](https://arxiv.org/pdf/2306.04815v1.pdf)
