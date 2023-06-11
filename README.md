@@ -13,6 +13,10 @@ arXiv categories covered:
 
 ## June 2023
 
+### 11
+
+* No new papers on arXiv
+
 ### 10
 
 * No new papers on arXiv
