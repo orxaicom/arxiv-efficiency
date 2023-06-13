@@ -13,6 +13,16 @@ arXiv categories covered:
 
 ## June 2023
 
+### 13
+
+* [Hidden symmetries of ReLU networks](https://arxiv.org/pdf/2306.06179v1.pdf)
+* [$`FPDM`$: Domain-Specific Fast Pre-training Technique using Document-Level Metadata](https://arxiv.org/pdf/2306.06190v1.pdf)
+* [Understanding the Effect of the Long Tail on Neural Network Compression](https://arxiv.org/pdf/2306.06238v1.pdf)
+* [Improving Non-autoregressive Translation Quality with Pretrained Language Model, Embedding Distillation and Upsampling Strategy for CTC](https://arxiv.org/pdf/2306.06345v1.pdf)
+* [Can Forward Gradient Match Backpropagation?](https://arxiv.org/pdf/2306.06968v1.pdf)
+* [Unveiling the Hessian's Connection to the Decision Boundary](https://arxiv.org/pdf/2306.07104v1.pdf)
+* [Benchmarking Neural Network Training Algorithms](https://arxiv.org/pdf/2306.07179v1.pdf)
+
 ### 12
 
 * [Boosting with Tempered Exponential Measures](https://arxiv.org/pdf/2306.05487v1.pdf)
