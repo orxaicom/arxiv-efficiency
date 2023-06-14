@@ -13,6 +13,12 @@ arXiv categories covered:
 
 ## June 2023
 
+### 14
+
+* [SqueezeLLM: Dense-and-Sparse Quantization](https://arxiv.org/pdf/2306.07629v1.pdf)
+* [Exact Mean Square Linear Stability Analysis for SGD](https://arxiv.org/pdf/2306.07850v1.pdf)
+* [One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning](https://arxiv.org/pdf/2306.07967v1.pdf)
+
 ### 13
 
 * [Hidden symmetries of ReLU networks](https://arxiv.org/pdf/2306.06179v1.pdf)
