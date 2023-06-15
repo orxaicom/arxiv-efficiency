@@ -13,6 +13,10 @@ arXiv categories covered:
 
 ## June 2023
 
+### 15
+
+* No new papers on arXiv
+
 ### 14
 
 * [SqueezeLLM: Dense-and-Sparse Quantization](https://arxiv.org/pdf/2306.07629v1.pdf)
