@@ -1,3 +1,5 @@
+![arxiv-efficiency](img/arxiv-efficiency-banner.png)
+
 # Daily arXiv papers about efficiency
 
 I'm interested in making deep learning more efficient.
