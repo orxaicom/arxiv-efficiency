@@ -13,6 +13,8 @@ arXiv categories covered:
 [cs.NE](https://arxiv.org/list/cs.NE/recent)
 [stat.ML](https://arxiv.org/list/stat.ML/recent)
 
+Disclaimer: We're not affiliated with arXiv.
+
 ## June 2023
 
 ### 15
