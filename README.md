@@ -17,6 +17,10 @@ Disclaimer: We're not affiliated with arXiv.
 
 ## June 2023
 
+### 17
+
+* No new papers on arXiv
+
 ### 16
 
 * [Neural Network Compression using Binarization and Few Full-Precision Weights](https://arxiv.org/pdf/2306.08960.pdf)
