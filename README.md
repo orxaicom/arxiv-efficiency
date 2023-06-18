@@ -18,6 +18,9 @@ Feel free to submit PR if you can summarize them better.
 
 Disclaimer: We're not affiliated with arXiv.
 
+## June 18, 2023
+
+No new papers on arXiv
 
 ## June 17, 2023
 
