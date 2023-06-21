@@ -18,6 +18,158 @@ Feel free to submit PR if you can summarize them better.
 
 Disclaimer: We're not affiliated with arXiv.
 
+## June 21, 2023
+
+[A Simple and Effective Pruning Approach for Large Language Models](https://arxiv.org/pdf/2306.11695.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a novel pruning approach called Wanda for Large Language Models (LLMs). Wanda incorporates both weights and input activations to compute weight importance, and compares weights on a per-output basis instead of across the whole layer. This approach is found to be crucial for effective pruning of LLMs.
+* Wanda outperforms magnitude pruning and competes favorably against recent methods that involve intensive weight update. It induces sparsity in pretrained LLMs without the need for retraining or weight update. This makes it a promising approach for optimizing large language models.
+* The performance of Wanda is evaluated on various language benchmarks, and it is compared to established baseline methods. The results demonstrate the effectiveness of Wanda in inducing sparsity while maintaining or even improving the performance of LLMs on these benchmarks.
+</p></details>
+
+[Principles for Initialization and Architecture Selection in Graph Neural Networks with ReLU Activations](https://arxiv.org/pdf/2306.11668.pdf) <details><summary>Summary</summary><p>
+* The paper focuses on the principles of initialization and architecture selection in Graph Neural Networks (GNNs) with ReLU activations. It introduces a residual GNN architecture called GCNII, which incorporates both FixUp-type skip connections and residual aggregation operators. Empirical results show that these models achieve strong performance on benchmark tasks like Cora.
+* The paper presents theoretical results regarding the exponential output failure mode in GNNs and its connection to the exploding and vanishing gradient problem. It also provides precise statements of oversmoothing estimates in theorems, highlighting the importance of understanding the limitations of GNNs and the impact of depth and activation functions.
+* The paper emphasizes the practical takeaways for initializing and designing GNNs. It highlights the significance of using residual connections to encourage trainability in deep GNNs and alleviate correlation collapse. The correct initialization, along with residual aggregation operators and connections, improves early training dynamics and enhances performance on various tasks.
+</p></details>
+
+[InRank: Incremental Low-Rank Learning](https://arxiv.org/pdf/2306.11250.pdf) <details><summary>Summary</summary><p>
+* The paper introduces the theory of greedy low-rank learning (GLRL) which explains how deep learning implicitly regularizes neural networks towards low-rank solutions through a gradual increase of rank during training.
+* However, GLRL requires an infinitesimal initialization of weights which is not practical, so the authors propose a new training algorithm called Incremental Low-Rank Learning (InRank) that explicitly expresses cumulative weight updates as low-rank matrices while incrementally augmenting their ranks during training to improve computational efficiency.
+* InRank achieves comparable prediction performance as full-rank counterparts while requiring at most 33% of total ranks throughout training and has been demonstrated to be effective on various neural networks and standard algorithms such as transformers and SGD/Adam.
+</p></details>
+
+[Causal Effect Regularization: Automated Detection and Removal of Spurious Attributes](https://arxiv.org/pdf/2306.11072.pdf) <details><summary>Summary</summary><p>
+* This paper introduces the concept of causal effect regularization as a method to detect and remove spurious attributes in classification datasets. It proposes a novel approach that can identify and mitigate the classifier's reliance on these attributes, even when information about them is unavailable.
+* The authors highlight the limitations of existing methods for identifying spurious attributes and demonstrate how their proposed method overcomes these limitations. By leveraging the ranking of the causal effect of causal and spurious attributes, they show that there exists a regularization strength that can lead to a desired classifier with lower loss compared to the undesired classifier.
+* The proposed method shows promising results in various real-world datasets, outperforming previous methods in reducing the dependence of classifiers on spurious attributes. This suggests its potential for practical applications in automated detection and removal of spurious attributes, improving the accuracy and reliability of classification models.
+</p></details>
+
+[Agnostically Learning Single-Index Models using Omnipredictors](https://arxiv.org/pdf/2306.10615.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a novel approach for agnostically learning Single-Index Models (SIMs) with arbitrary monotone and Lipschitz activations. This is significant because it eliminates the need for prior knowledge of the activation function and only assumes bounded second moments for the marginal.
+* The authors propose an algorithm based on recent research on omniprediction using predictors satisfying calibrated multiaccuracy. This algorithm efficiently computes an ε1-calibrated and (C, ε1)-multiaccurate predictor, where calibration and multiaccuracy are defined in the context of fairness literature.
+* The paper provides a proof of Theorem 3.2, which combines the results from previous theorems and lemmas. The proof demonstrates the effectiveness of the proposed algorithm in learning SIMs and establishes its theoretical foundations.
+</p></details>
+
+[Adaptive Strategies in Non-convex Optimization](https://arxiv.org/pdf/2306.10278.pdf) <details><summary>Summary</summary><p>
+* The first problem in optimizing deep learning models is the effect of noise on the convergence rate of stochastic optimization algorithms, which can be addressed by designing noise-adaptive algorithms that can automatically achieve optimal rates under different noise scales.
+* The second problem is the wide range of gradient magnitudes in deep neural networks, which can be mitigated by using scale-free algorithms that adapt to the gradient scales.
+* The third problem is the relaxed smoothness condition of some deep learning objective functions, which can be addressed by using a generalized SignSGD algorithm that can theoretically match the best-known convergence rates without explicit gradient clipping and can adapt to the unknown relaxed smoothness.
+</p></details>
+
+[Magnificent Minified Models](https://arxiv.org/pdf/2306.10177.pdf) <details><summary>Summary</summary><p>
+* The paper explores different methods for compressing large neural networks while maintaining model accuracy, including parameter and neuron selection, quantization, and training smaller models from scratch.
+* The OBD-SD method slightly outperformed all other parameter and neuron selection methods in the experiments with substantial pruning.
+* The results are only barely consistent with the Lottery Ticket Hypothesis, and the paper provides valuable insights into optimizing deep neural networks.
+</p></details>
+
+[Mean-field Analysis of Generalization Errors](https://arxiv.org/pdf/2306.11623.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a novel framework for analyzing generalization errors in machine learning algorithms. It utilizes differential calculus on the space of probability measures to explore weak and L2 generalization errors.
+* The authors establish conditions under which the generalization error convergence rate, when training on a sample of size n, is O(1/n). This result provides insights into the relationship between the sample size and the generalization performance of the algorithm.
+* The paper compares this framework for analyzing generalization errors in overparameterized regimes to existing theories for under-parameterized regimes. It highlights the three main approaches used in analyzing learning problems in an overparameterized regime: the neural tangent kernel (NTK), random feature, and mean-field approaches.
+</p></details>
+
+[A Passivity-Based Method for Accelerated Convex Optimisation](https://arxiv.org/pdf/2306.11474.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a passivity-based methodology for designing accelerated convex optimization algorithms in the continuous-time domain. This methodology combines the concepts of passivity from control theory and time-dependent change of variables to create a general framework for generating convex optimization algorithms with different convergence rate bounds on the objective function value.
+* The authors highlight the role of dissipativity theory in the analysis and design of optimization algorithms. By constructing associated Lyapunov functions, they enable rigorous convergence analysis and provide a deeper understanding of the relationship between control theory and optimization.
+* The proposed methodology offers a constructive procedure for achieving accelerated convergence in the design of new optimization algorithms. It provides a streamlined approach for designing and analyzing accelerated convex optimization algorithms, allowing for improved efficiency and performance in various applications.
+</p></details>
+
+[Dropout Regularization Versus $`\ell_2`$-Penalization in the Linear Model](https://arxiv.org/pdf/2306.10529.pdf) <details><summary>Summary</summary><p>
+* The paper investigates the statistical behavior of gradient descent iterates with dropout in the linear regression model.
+* The authors compare the performance of dropout regularization and ℓ2-penalization in preventing overfitting in neural networks.
+* The paper provides non-asymptotic bounds for expectations and covariance matrices of the iterates derived in this study.
+</p></details>
+
+[Traversing Between Modes in Function Space for Fast Ensembling](https://arxiv.org/pdf/2306.11304.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a novel framework called "bridge networks" that aims to reduce the inference costs of deep neural networks. These bridge networks efficiently predict outputs for low-loss subspaces without the need for multiple forward passes through the original network.
+* Through empirical validation on various image classification benchmarks, the paper demonstrates that bridge networks can accurately predict outputs of connecting subspaces with minimal computation cost. This means that the proposed framework can significantly reduce inference costs without sacrificing performance.
+* The paper also discusses the problem setup of K-way classification with D-dimensional inputs and presents the decomposition of a deep neural network into a feature extractor and a classifier. Additionally, the paper highlights the importance of mode connectivity in ensembling methods and how bridge networks leverage this connectivity to make accurate predictions.
+</p></details>
+
+[ZeRO++: Extremely Efficient Collective Communication for Giant Model Training](https://arxiv.org/pdf/2306.10209.pdf) <details><summary>Summary</summary><p>
+* ZeRO++ is an efficient collective communication solution for giant model training using ZeRO stage-3. It optimizes both model weights and gradients communication in the forward and backward pass of each training iteration.
+* ZeRO++ employs three techniques to reduce communication volume: block-based quantization and data pre-fetching to reduce communication volume of model weights in forward propagation, holding secondary model partition on each node to remove cross-node communication of weights during the backward pass, and a straightforward interleaving schedule to merge the convergence gap.
+* The implementation of ZeRO++ results in significant improvements in training throughput at scale. It achieves up to 2.16x better throughput at 384 GPU scale, enabling faster training of large language models.
+</p></details>
+
+[Spatial-SpinDrop: Spatial Dropout-based Binary Bayesian Neural Network with Spintronics Implementation](https://arxiv.org/pdf/2306.10185.pdf) <details><summary>Summary</summary><p>
+* Utilizing Dropout as an approximation of the posterior distribution in BayNNs: The paper highlights the benefits of using Dropout as an approximation of the posterior distribution in Bayesian neural networks (BayNNs). Dropout helps in estimating uncertainty in deep learning models, enhancing the trustworthiness of decision-making, and providing insight into the model's confidence in its predictions.
+* Spintronics-based computation-in-memory (CiM) hardware arrays for edge AI: The paper discusses the implementation of BayNNs in spintronics-based computation-in-memory (CiM) hardware arrays. This approach offers a viable solution for edge AI by leveraging the fast switching, high endurance, and CMOS compatibility of MRAM (Magnetic Random Access Memory) devices. The main component of MRAM devices is the Magnetic Tunnel Junction (MTJ), which allows for efficient and energy-saving computation.
+* Addressing challenges in hardware Dropout modules for CNN topologies: The paper addresses the challenges that arise when designing hardware Dropout modules for convolutional neural network (CNN) topologies. It introduces MC-SpatialDropout, a spatial dropout-based approximate BayNNs with spintronics implementation, which aims to overcome these challenges. MC-SpatialDropout provides a solution for efficient uncertainty estimation in CNNs, enhancing the performance and reliability of edge AI systems.
+</p></details>
+
+[LoSparse: Structured Compression of Large Language Models based on Low-Rank and Sparse Approximation](https://arxiv.org/pdf/2306.11222.pdf) <details><summary>Summary</summary><p>
+* LoSparse is a model compression technique for large language models based on low-rank and sparse approximation.
+* The method combines the advantages of low-rank approximations and pruning to reduce the size and complexity of transformer models while maintaining their performance in natural language tasks.
+* LoSparse achieves superior results compared to existing compression methods and has been evaluated on various language tasks.
+</p></details>
+
+[Sparse Modular Activation for Efficient Sequence Modeling](https://arxiv.org/pdf/2306.11197.pdf) <details><summary>Summary</summary><p>
+* Sparse Modular Activation (SMA) is a new mechanism that enables neural networks to sparsely and dynamically activate sub-modules for sequence elements, reducing computation and memory consumption in sequence modeling tasks.
+* SMA outperforms traditional self-attention-based models in terms of quality-efficiency trade-offs, achieving state-of-the-art results on several benchmark datasets while using fewer parameters and less computation.
+* The SeqBoat architecture utilizes SMA to activate a Gated Attention Unit (GAU) based on the state representations learned from a Linear State Space Model (SSM), achieving even better performance on certain tasks. However, the scalability and applicability of SMA to larger, more complex models remain uncertain, and ethical considerations such as data privacy need to be seriously considered.
+</p></details>
+
+[The Implicit Bias of Batch Normalization in Linear Models and Two-layer Linear Convolutional Neural Networks](https://arxiv.org/pdf/2306.11680.pdf) <details><summary>Summary</summary><p>
+* The paper focuses on studying the implicit bias of batch normalization in linear models and two-layer linear convolutional neural networks. It explores the convergence rate, theoretical understanding, and the impact of batch normalization on these models.
+* The authors introduce key proof techniques to analyze the implicit bias of batch normalization. They discuss the training process happening in a subspace and the use of a projection matrix in their results.
+* The paper presents theoretical results and proofs, including the proof of the first result. It provides insights into the convergence rate, implicit bias, and the theoretical understanding of batch normalization in linear models and two-layer linear convolutional neural networks.
+</p></details>
+
+[Understanding Generalization in the Interpolation Regime using the Rate Function](https://arxiv.org/pdf/2306.10947.pdf) <details><summary>Summary</summary><p>
+* Characterizing smoothness: The paper introduces a new approach to characterize the smoothness of a model. Unlike traditional methods, this approach focuses on the rate function, which provides insights into the behavior of the model in the interpolation regime.
+* Biasing towards smoother interpolators: The paper discusses modern learning techniques that bias the optimizer towards smoother interpolators. By understanding the impact of smoothness on generalization, these techniques aim to improve the performance of machine learning models.
+* Contribution to understanding generalization error: The theoretical analysis presented in this paper contributes to our understanding of generalization error in machine learning. By examining the relationship between smoothness and generalization, it provides valuable insights into why some interpolators generalize better than others.
+</p></details>
+
+[AdaSelection: Accelerating Deep Learning Training through Data Subsampling](https://arxiv.org/pdf/2306.10728.pdf) <details><summary>Summary</summary><p>
+* Flexible combination of baseline methods: AdaSelection allows for the integration of various baseline sub-sampling methods, such as uniform, Big Loss, Small Loss, Gradient Norm, AdaBoost, and Coresets selection. This flexibility enables the selection of the most informative sub-samples within each minibatch.
+* Maintaining model performance: Despite subsampling, AdaSelection ensures that model performance is not compromised. By carefully selecting the most representative sub-samples, AdaSelection maintains accuracy while significantly reducing training time for large-scale deep learning models.
+* Improved selection during forward and backward passes: AdaSelection improves the selection of data instances during both forward and backward passes. It leverages a mixture policy that selects sub-samples with the biggest and smallest losses, as well as finding datapoints closest to the mean loss of the whole batch. This approach ensures that the selected sub-samples are informative and representative of the entire dataset.
+</p></details>
+
+[Instant Soup: Cheap Pruning Ensembles in A Single Pass Can Draw Lottery Tickets from Large Models](https://arxiv.org/pdf/2306.10460.pdf) <details><summary>Summary</summary><p>
+* Instant Soup Pruning (ISP): The paper proposes ISP as a novel pruning strategy that integrates the "model soup" idea. It replaces expensive intermediate pruning stages with computationally-cheap weak mask generation and denoising, while outperforming traditional pruning methods for large pre-trained models.
+* Self-denoising ability: ISP naturally provides a "self-denoising" ability, eliminating the need for generating high-quality and expensive masks at each pruning stage. Instead, it generates multiple computationally inexpensive weak masks and averages them out to reduce solution noise, improving the overall performance.
+* Dense-to-dense paradigm and Instant Model Soup: ISP can be adapted to the dense-to-dense paradigm, known as Instant Model Soup, to inject the benefits of model soups in dense pre-trained models at marginal training cost. This improves fine-tuning performance and offers potential advantages for various applications.
+</p></details>
+
+[Optimizer's Information Criterion: Dissecting and Correcting Bias in Data-Driven Optimization](https://arxiv.org/pdf/2306.10081.pdf) <details><summary>Summary</summary><p>
+* The paper discusses the Optimizer's Information Criterion and its role in addressing bias in data-driven optimization.
+* The criterion eliminates the need for computationally expensive techniques like cross-validation and can be used for decision selection in addition to model selection.
+* The paper also explores the application of the criterion to various data-driven optimization formulations.
+</p></details>
+
+[Convergence and concentration properties of constant step-size SGD through Markov chains](https://arxiv.org/pdf/2306.11497.pdf) <details><summary>Summary</summary><p>
+* This paper analyzes the convergence and concentration properties of constant step-size stochastic gradient descent (SGD) through Markov chains.
+* The paper presents non-asymptotic results on the convergence of SGD to an invariant distribution in total variation distance and Wasserstein distance.
+* The analysis includes discussions on the assumptions necessary for SGD convergence, the relationship between the gradient and concentration properties, and the applications of these results in deriving high-confidence bounds for the final estimate.
+</p></details>
+
+[P-tensors: a General Formalism for Constructing Higher Order Message Passing Networks](https://arxiv.org/pdf/2306.10767.pdf) <details><summary>Summary</summary><p>
+* The paper introduces the concept of P-tensors, which are permutation equivariant tensors used to construct higher order message passing networks.
+* The proposed paradigm of using P-tensors and higher order message passing networks achieves state-of-the-art performance on various benchmark datasets, particularly on highly structured graphs like molecules.
+* The authors suggest that further exploration is needed to determine the best subgraphs to use in constructing P-tensors and to understand the spatial layout of these higher order representations.
+</p></details>
+
+[Beyond Geometry: Comparing the Temporal Structure of Computation in Neural Circuits with Dynamical Similarity Analysis](https://arxiv.org/pdf/2306.10168.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a novel similarity metric that allows for the comparison of neural networks based on their dynamics, rather than just their spatial geometry. This metric incorporates data-driven dynamical systems theory and Procrustes Analysis to effectively identify and distinguish dynamic structures in recurrent neural networks.
+* The authors demonstrate the effectiveness of their proposed method through four case studies. These case studies involve comparing the dynamics of neural networks trained on different tasks, such as the well-known 3-bit Flip Flop task. The results show that the proposed similarity metric successfully captures the core features of the original nonlinear dynamics in these networks.
+* The findings of this study have implications for understanding the variability in neural activity and behavior across subjects performing flexible decision-making tasks. By jointly explaining behavioral and neural variability, this framework provides insights into the underlying mechanisms of decision-making processes.
+</p></details>
+
+[Memory-Constrained Algorithms for Convex Optimization via Recursive Cutting-Planes](https://arxiv.org/pdf/2306.10096.pdf) <details><summary>Summary</summary><p>
+* The paper proposes a family of recursive cutting-plane algorithms that can solve feasibility problems with constrained memory.
+* These algorithms provide a positive trade-off between gradient descent and cutting-plane methods, making them valuable tools in various optimization scenarios.
+* The paper also includes a convergence proof for the memory-constrained gradient descent for feasibility problems and describes how to improve the known lower-bound trade-offs.
+</p></details>
+
+[Intrinsic Dimension Estimation for Robust Detection of AI-Generated Texts](https://arxiv.org/pdf/2306.04723.pdf) <details><summary>Summary</summary><p>
+* The increasing quality of AI-generated content poses a challenge for distinguishing between human and AI-generated texts.
+* The paper proposes an invariant measure, the intrinsic dimensionality of the manifold underlying text embeddings, which can effectively separate natural and AI-generated texts.
+* The paper provides insights into the average intrinsic dimensionality for different languages and highlights the statistical differences between human-generated and AI-generated texts.
+</p></details>
+
 ## June 20, 2023
 
 No new papers on arXiv
