@@ -18,6 +18,56 @@ Feel free to submit PR if you can summarize them better.
 
 Disclaimer: We're not affiliated with arXiv.
 
+## June 22, 2023
+
+[Iterated Piecewise Affine (IPA) Approximation for Language Modeling](https://arxiv.org/pdf/2306.12317.pdf) <details><summary>Summary</summary><p>
+* The paper introduces the IPA algorithm, which is a novel approach to language modeling using a first-order Taylor expansion and piecewise function estimation techniques.
+* Experimental results show that IPA performs better than Transformers in predicting the next token for statistically common sequences, but Transformers may perform better for repeating an uncommon sequence seen earlier in the sequence.
+* The authors suggest that future research could focus on addressing the issue observed in IPA and further exploring the potential applications of the IPA algorithm beyond language modeling.
+</p></details>
+
+[PriorBand: Practical Hyperparameter Optimization in the Age of Deep Learning](https://arxiv.org/pdf/2306.12370.pdf) <details><summary>Summary</summary><p>
+* The PriorBand algorithm: The paper introduces the PriorBand algorithm, which addresses the challenges of hyperparameter optimization (HPO) in deep learning. It leverages expert beliefs and cheap proxy tasks to guide the search for optimal hyperparameters, making the HPO process more efficient and effective.
+* Leveraging cheap proxy tasks: The PriorBand algorithm is the first to develop an approach that utilizes cheap proxy tasks with an expert prior input. By incorporating these proxy tasks, the algorithm improves the optimization process beyond a naive solution, leading to better hyperparameter configurations.
+* Efficiency and gains: The PriorBand algorithm has demonstrated its efficiency and gains in various deep learning benchmarks. It has shown improved performance compared to other HPO algorithms, achieving better results in terms of accuracy and convergence speed.
+</p></details>
+
+[Quantifying lottery tickets under label noise: accuracy, calibration, and complexity](https://arxiv.org/pdf/2306.12190.pdf) <details><summary>Summary</summary><p>
+* The paper explores the concept of pruning deep neural networks and its impact on model accuracy. It provides empirical evidence that pruned models can achieve high accuracy even with a reduced number of parameters.
+* The authors compare pruned models to full networks and find that pruned models can outperform or achieve similar accuracy levels while having significantly fewer parameters. This suggests that pruning can effectively reduce model complexity without sacrificing performance.
+* The experimental analysis in the paper focuses on iterative magnitude pruning (IMP) and its ability to capture the true conditional probability distribution of labels. The results highlight the benefits of IMP in terms of accuracy and overconfident predictions, indicating its potential for practical applications in deep learning.
+</p></details>
+
+[Training Transformers with 4-bit Integers](https://arxiv.org/pdf/2306.11987.pdf) <details><summary>Summary</summary><p>
+* Proposal of a Training Method: The paper introduces a novel training method for Transformers using INT4 arithmetic. This method allows for faster neural network training by carefully analyzing the structures of activations and gradients in Transformers and proposing dedicated quantizers for accurate quantization.
+* Addressing Challenges: The authors address two specific challenges in training Transformers with 4-bit Integers. Firstly, they tackle the issue of outliers in forward propagation by employing a dynamic range estimator and a quantization-aware training strategy. Secondly, they handle the structural sparsity of gradients in backpropagation by introducing a gradient sparsification technique.
+* Performance Improvements: The proposed algorithm achieves competitive accuracy on various tasks while providing significant speed improvements. The paper highlights that the algorithm can be implemented on current GPUs and offers a speedup compared to FP16 counterparts, making it an efficient solution for training Transformers with 4-bit Integers.
+</p></details>
+
+[No Wrong Turns: The Simple Geometry Of Neural Networks Optimization Paths](https://arxiv.org/pdf/2306.11922.pdf) <details><summary>Summary</summary><p>
+* Theoretical Complexity of Neural Landscapes: The paper highlights that the observed optimization trajectories in neural networks contrast starkly with the theoretical complexity of neural landscapes. This suggests the potential for developing tailored theoretical results for deep learning or designing optimization algorithms that exploit the geometry of empirical objective functions. 
+* Predictable Optimization Dynamics: The study reveals that optimization trajectories in neural networks exhibit predictable and consistent behavior throughout training. The findings indicate that these trajectories maintain stable dynamics and guarantee linear convergence. This insight provides valuable understanding of the optimization process in neural networks. 
+* Empirical Learning Rate Schedules: The paper discusses how the observed properties of optimization trajectories relate to empirical learning rate schedules. While the specific details are not mentioned in the given texts, it suggests that the study explores the relationship between optimization dynamics and the choice of learning rate schedules in neural network training. 
+</p></details>
+
+[Deep Fusion: Efficient Network Training via Pre-trained Initializations](https://arxiv.org/pdf/2306.11903.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a technique called deep fusion, which combines multiple models into a single model to improve the training process of large models in natural language processing (NLP) tasks.
+* Deep fusion reduces computational requirements and accelerates the training process, leading to improved generalization performance on various NLP tasks and different sizes of language models.
+* The experiments and publications mentioned in the paper demonstrate that larger models tend to yield better performance in NLP tasks, and deep fusion offers a practical and effective approach to reduce training time and resource consumption while maintaining or surpassing traditional training methods.
+</p></details>
+
+[DynaQuant: Compressing Deep Learning Training Checkpoints via Dynamic Quantization](https://arxiv.org/pdf/2306.11800.pdf) <details><summary>Summary</summary><p>
+* DynaQuant introduces a novel method for compressing model weights during training, optimizing storage and network bandwidth usage without sacrificing accuracy.
+* The approach utilizes dynamic quantization, which categorizes model parameters into three groups based on their magnitude and sensitivity scores: pruning, protection, and quantization.
+* The paper highlights the benefits of model checkpoint compression, such as reducing the size of checkpoints, enabling faster recovery from failures in training workloads, and improving overall efficiency in deep learning development workflows.
+</p></details>
+
+[Fantastic Weights and How to Find Them: Where to Prune in Dynamic Sparse Training](https://arxiv.org/pdf/2306.12230.pdf) <details><summary>Summary</summary><p>
+* The paper explores the concept of Dynamic Sparse Training (DST) and its potential to optimize neural networks by adapting their topology during training.
+* The authors investigate the influence of different pruning criteria on the dynamics of DST solutions and find that magnitude-based pruning often yields the best performance in low-density scenarios.
+* Through extensive empirical analysis, the paper provides insights into the diverse weights selected for removal and highlights the importance of considering structural similarity in the pruning process.
+</p></details>
+
 ## June 21, 2023
 
 [A Simple and Effective Pruning Approach for Large Language Models](https://arxiv.org/pdf/2306.11695.pdf) <details><summary>Summary</summary><p>
