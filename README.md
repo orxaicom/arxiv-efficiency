@@ -27,7 +27,7 @@ Disclaimer: We're not affiliated with arXiv.
 </p></details>
 
 [PriorBand: Practical Hyperparameter Optimization in the Age of Deep Learning](https://arxiv.org/pdf/2306.12370.pdf) <details><summary>Summary</summary><p>
-* The PriorBand algorithm: The paper introduces the PriorBand algorithm, which addresses the challenges of hyperparameter optimization (HPO) in deep learning. It leverages expert beliefs and cheap proxy tasks to guide the search for optimal hyperparameters, making the HPO process more efficient and effective.
+* The paper introduces the PriorBand algorithm, which addresses the challenges of hyperparameter optimization (HPO) in deep learning. It leverages expert beliefs and cheap proxy tasks to guide the search for optimal hyperparameters, making the HPO process more efficient and effective.
 * Leveraging cheap proxy tasks: The PriorBand algorithm is the first to develop an approach that utilizes cheap proxy tasks with an expert prior input. By incorporating these proxy tasks, the algorithm improves the optimization process beyond a naive solution, leading to better hyperparameter configurations.
 * Efficiency and gains: The PriorBand algorithm has demonstrated its efficiency and gains in various deep learning benchmarks. It has shown improved performance compared to other HPO algorithms, achieving better results in terms of accuracy and convergence speed.
 </p></details>
