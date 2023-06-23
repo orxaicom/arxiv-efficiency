@@ -18,6 +18,62 @@ Feel free to submit PR if you can summarize them better.
 
 Disclaimer: We're not affiliated with arXiv.
 
+## June 23, 2023
+
+[Quantizable Transformers: Removing Outliers by Helping Attention Heads Do Nothing](https://arxiv.org/pdf/2306.12929.pdf) <details><summary>Summary</summary><p>
+* Transformer models are widely used in various domains, but their large size requires significant compute and memory consumption.
+* Quantization is an effective way to reduce computational time and memory usage, but strong outliers in activations make it difficult to quantize modern transformer models without sacrificing performance.
+* The authors propose two modifications to the attention mechanism - clipped softmax and gated attention - that help address this issue by reducing outliers while maintaining or improving task performance, enabling full INT8 quantization without additional effort.
+</p></details>
+
+[Memory-Query Tradeoffs for Randomized Convex Optimization](https://arxiv.org/pdf/2306.12534.pdf) <details><summary>Summary</summary><p>
+* The paper explores the tradeoffs between memory and query complexity in randomized convex optimization algorithms. It shows that achieving optimal performance in these algorithms requires either a significant amount of memory or a large number of queries.
+* The authors introduce the concept of quasipolynomial precision, which refers to the level of accuracy or approximation achieved in the optimization problem. They demonstrate that achieving higher precision requires an exponential increase in either memory or query complexity.
+* The paper also discusses the application of these tradeoffs to cutting plane methods, a type of randomized first-order algorithm. It provides insights into the optimal query complexity for convex optimization and highlights the challenges in balancing memory and query usage to achieve efficient and accurate solutions.
+</p></details>
+
+[Accelerated Training via Incrementally Growing Neural Networks using Variance Transfer and Learning Rate Adaptation](https://arxiv.org/pdf/2306.12700.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a novel approach to training neural networks called incrementally growing neural networks. This approach addresses the optimization difficulty caused by imbalanced training effort in subnetworks at different growth phases. It proposes a learning rate adaptation mechanism that rebalances the gradient contribution of these separate subcomponents.
+* Experimental results demonstrate that the proposed method achieves comparable or better accuracy than training large fixed-size models. Additionally, it significantly reduces the computation budget required for training, resulting in real wall-clock training speedups. This highlights the efficiency and effectiveness of the proposed approach.
+* The paper emphasizes the importance of considering the effects of network growth on training dynamics. By stabilizing weight, activation, and gradient scaling as the architecture evolves, the proposed parameterization scheme improves the overall training process. This contributes to improved accuracy and efficiency in training neural networks.
+</p></details>
+
+[Constant Memory Attention Block](https://arxiv.org/pdf/2306.12599.pdf) <details><summary>Summary</summary><p>
+* The Constant Memory Attention Block (CMAB) is a novel attention mechanism that operates in constant memory and computation. It addresses the memory limitations of existing approaches, allowing for efficient processing of large-scale datasets without sacrificing performance.
+* CMAB demonstrates its effectiveness in two domains: Neural Processes (NPs) and Temporal Point Processes (TPPs). In NPs, CMAB achieves competitive performance compared to prior state-of-the-art methods, such as TNP-D and LBANP. In TPPs, CMAB outperforms Transformer-based models (THPs) and offers the advantage of efficient model updates with new data.
+* The paper highlights the importance of efficient attention mechanisms and discusses existing approaches to improve efficiency, such as linear complexity self-attention and intensity-free learning of temporal point processes. CMAB stands out by providing constant memory and computation requirements, making it a promising solution for low-compute domains.
+</p></details>
+
+[FFCV: Accelerating Training by Removing Data Bottlenecks](https://arxiv.org/pdf/2306.12517.pdf) <details><summary>Summary</summary><p>
+* FFCV improves training efficiency: By implementing techniques such as efficient file storage, caching, and asynchronous data transfer, FFCV optimizes data loading and processing. This results in faster training times and improved overall efficiency.
+* Competitive tradeoffs between accuracy and training time: FFCV allows users to achieve competitive tradeoffs between model accuracy and training time. The paper demonstrates this by training an ImageNet ResNet-50 model to 75% accuracy in just 20 minutes on a single machine, showcasing the effectiveness of FFCV in reducing training time.
+* Performance, ease-of-use, and adaptability: The paper highlights the performance, ease-of-use, and adaptability of FFCV. It provides case studies and examples that demonstrate the effectiveness of FFCV in various scenarios, making it a valuable tool for researchers and practitioners in the field of machine learning.
+</p></details>
+
+[Don't be so Monotone: Relaxing Stochastic Line Search in Over-Parameterized Models](https://arxiv.org/pdf/2306.12747.pdf) <details><summary>Summary</summary><p>
+* The paper proposes nonmonotone line search methods for Stochastic Gradient Descent (SGD) and Adam optimization algorithms in over-parameterized models.
+* These nonmonotone methods allow for larger step sizes and faster convergence rates, even in non-convex landscapes.
+* The authors introduce a new method called POlyak NOnmonotone Stochastic (PoNoS) that combines a nonmonotone line search with a Polyak initial step size and a resetting technique to reduce the number of backtracks, which improves the speed of convergence and generalization properties of SGD/Adam beyond previous monotonic line searches.
+</p></details>
+
+[Finite-time Lyapunov exponents of deep neural networks](https://arxiv.org/pdf/2306.12548.pdf) <details><summary>Summary</summary><p>
+* The paper explores the finite-time Lyapunov exponents of deep neural networks and their impact on small input perturbations. It investigates the analogy between deep networks and dynamical systems, revealing the geometrical structures formed by these networks in input space.
+* By understanding these structures, the paper aims to gain insights into the fundamental mechanisms underlying the learning capabilities of deep neural networks. It highlights the importance of these structures in shaping the behavior of the networks and their ability to generalize from training data to unseen examples.
+* The findings of this study contribute to a deeper understanding of the inner workings of deep neural networks and provide valuable insights into their learning capabilities. This knowledge can potentially inform the development of more robust and efficient deep learning algorithms in various applications.
+</p></details>
+
+[Empirical Risk Minimization with Shuffled SGD: A Primal-Dual Perspective and Improved Bounds](https://arxiv.org/pdf/2306.12498.pdf) <details><summary>Summary</summary><p>
+* This paper focuses on the topic of Empirical Risk Minimization with Shuffled SGD from a Primal-Dual Perspective and Improved Bounds.
+* It explores the theoretical and practical aspects of stochastic gradient descent (SGD) in machine learning optimization methods, specifically examining the difference between sampling with replacement and sampling without replacement.
+* The paper introduces the concept of the primal-dual perspective in the context of shuffled SGD, which helps improve the bounds and performance predictions of the optimization method.
+</p></details>
+
+[Verifying Global Neural Network Specifications using Hyperproperties](https://arxiv.org/pdf/2306.12495.pdf) <details><summary>Summary</summary><p>
+* The paper presents a novel approach to neural network verification that focuses on global specifications, providing guarantees for all potential inputs.
+* The authors introduce a hyperproperty formalism that allows for expressing global specifications such as monotonicity, Lipschitz continuity, global robustness, and dependency fairness.
+* By leveraging capabilities for verifying general computational graphs, they extend the scope of guarantees that can be provided using existing methods, and highlight recent success in verifying specific global specifications.
+</p></details>
+
 ## June 22, 2023
 
 [Iterated Piecewise Affine (IPA) Approximation for Language Modeling](https://arxiv.org/pdf/2306.12317.pdf) <details><summary>Summary</summary><p>
