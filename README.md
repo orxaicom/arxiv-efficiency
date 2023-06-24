@@ -18,6 +18,10 @@ Feel free to submit PR if you can summarize them better.
 
 Disclaimer: We're not affiliated with arXiv.
 
+## June 24, 2023
+
+No new papers on arXiv
+
 ## June 23, 2023
 
 [Quantizable Transformers: Removing Outliers by Helping Attention Heads Do Nothing](https://arxiv.org/pdf/2306.12929.pdf) <details><summary>Summary</summary><p>
