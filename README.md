@@ -18,6 +18,44 @@ Feel free to submit PR if you can summarize them better.
 
 Disclaimer: We're not affiliated with arXiv.
 
+## June 26, 2023
+
+[GKD: Generalized Knowledge Distillation for Auto-regressive Sequence Models](https://arxiv.org/pdf/2306.13649.pdf) <details><summary>Summary</summary><p>
+* Generalized Knowledge Distillation (GKD) is a novel approach to knowledge distillation that addresses key issues in current methods for auto-regressive models.
+* GKD can compress neural networks and reduce their inference cost and memory footprint while still achieving high performance on tasks such as summarization, machine translation, and arithmetic reasoning.
+* GKD outperforms commonly-used approaches for distilling large language models in terms of performance on different tasks, and it can handle model under-specification, which is important for distilling LLMs.
+</p></details>
+
+[Margin Maximization in Attention Mechanism](https://arxiv.org/pdf/2306.13596.pdf) <details><summary>Summary</summary><p>
+* The paper explores the theoretical principles underlying the attention mechanism and its nonconvex optimization dynamics.
+* The authors prove that running gradient descent on the tunable parameters leads to a max-margin solution that separates optimal tokens from non-optimal ones.
+* The paper also analyzes the margin maximizing nature of attention for nonlinear prediction heads and provides insights into the softmax-attention model.
+</p></details>
+
+[Predicting Grokking Long Before it Happens: A look into the loss landscape of models which grok](https://arxiv.org/pdf/2306.13253.pdf) <details><summary>Summary</summary><p>
+* The paper focuses on predicting the occurrence of "grokking" in neural networks, a phenomenon where perfect generalization emerges long after signs of overfitting or memorization are observed.
+* The authors propose a low-cost method to predict grokking without training for a large number of epochs by studying the learning curve of the first few epochs and identifying certain oscillations that indicate the occurrence of grokking if trained for much longer.
+* They use Fourier transform to detect these oscillations and present additional experiments aimed at explaining their cause and characterizing loss landscape, which can help identify hyper-parameters leading to grokking more efficiently.
+</p></details>
+
+[The Inductive Bias of Flatness Regularization for Deep Matrix Factorization](https://arxiv.org/pdf/2306.13239.pdf) <details><summary>Summary</summary><p>
+* The paper explores the inductive bias of flatness regularization in deep matrix factorization. It investigates the implicit regularization effect of stochastic optimizers in minimizing the sharpness of the loss function, particularly the trace of its Hessian, over the family of zero-loss solutions.
+* The authors empirically demonstrate that explicit forms of flatness regularization can enhance generalization performance. However, the reasons behind this improvement and the conditions under which flatness regularization leads to better generalization are still not fully understood.
+* The paper takes a significant step towards understanding the inductive bias of minimum trace of the Hessian solutions in the context of learning deep linear networks from linear measurements. It lays the foundation for further research on the relationship between flatness regularization and generalization in deep matrix factorization.
+</p></details>
+
+[Pruning for Better Domain Generalizability](https://arxiv.org/pdf/2306.13237.pdf) <details><summary>Summary</summary><p>
+* Pruning for Better Domain Generalizability: The paper explores the use of pruning as a technique to enhance the generalization ability of models. It proposes a novel pruning scoring method called DSS, which focuses on improving the robustness of the model rather than solely maintaining source accuracy.
+* Empirical Studies and Results: The authors conduct extensive empirical studies on various datasets and model architectures. They compare the performance of different pruning sparsity ratios and observe that the existing L2 pruning method offers a slight improvement over the baseline. However, the proposed DSS method shows a significant improvement in performance, achieving more than a 5-point increase in baseline accuracy by sparsifying 60% of the channels in the model.
+* Combination with State-of-the-Art Techniques: The effectiveness of the DSS method is further validated by combining it with the state-of-the-art work MIRO. Experimental results on benchmark datasets demonstrate a 1-point improvement in MIRO's performance by introducing a 10% channel sparsity into the model. This showcases the capability of the proposed method to enhance the state-of-the-art results in domain generalization.
+</p></details>
+
+[Scaling MLPs: A Tale of Inductive Bias](https://arxiv.org/pdf/2306.13575.pdf) <details><summary>Summary</summary><p>
+* The paper explores the generalization gap in large batch training of neural networks. It highlights the importance of training for longer durations to improve the generalization performance of neural networks.
+* The authors investigate the role of inductive bias in deep learning models, particularly focusing on multi-layer perceptrons (MLPs). They discuss the discrepancy between theory and practice and how MLPs can compensate for the lack of inductive bias with scale.
+* The study provides empirical insights into the performance of MLPs on vision tasks. It showcases remarkable performance improvements achieved by MLPs with scale, indicating their potential as a proxy for more complex architectures.
+</p></details>
+
 ## June 25, 2023
 
 No new papers on arXiv
