@@ -18,6 +18,122 @@ Feel free to submit PR if you can summarize them better.
 
 Disclaimer: We're not affiliated with arXiv.
 
+## June 27, 2023
+
+[The Double Helix inside the NLP Transformer](https://arxiv.org/pdf/2306.13817.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a framework for analyzing different types of information in NLP Transformers, including positional, syntactic, semantic, and contextual layers.
+* The authors propose a Linear-and-Add approach for optimal embedding, arguing that the common practice of adding positional information to semantic embedding is sub-optimal.
+* The analysis uncovers patterns and clusters that shed light on the processing of information in NLP Transformers, offering a deeper understanding of their functionality and equipping practitioners with the knowledge to effectively harness their capabilities.
+</p></details>
+
+[Machine Learning needs its own Randomness Standard: Randomised Smoothing and PRNG-based attacks](https://arxiv.org/pdf/2306.14043.pdf) <details><summary>Summary</summary><p>
+* The paper highlights the importance of randomness in machine learning and the potential risks associated with poor randomness.
+* The authors introduce a novel attack against a specific approach called Randomised Smoothing and provide insights on how to prevent such attacks.
+* The paper calls for improved standards for randomness in ML systems and suggests practical ways to tackle vulnerabilities in practice.
+</p></details>
+
+[Partitioning-Guided K-Means: Extreme Empty Cluster Resolution for Extreme Model Compression](https://arxiv.org/pdf/2306.14031.pdf) <details><summary>Summary</summary><p>
+* The paper introduces Partitioning-Guided k-means (PG k-means) as a competitive quantization methodology for extreme model compression in NLP tasks. It addresses the issue of empty clusters in Iterative Product Quantization with Quant-Noise and proposes three components to consistently reduce the number of empty clusters and improve compression.
+* The results of the study demonstrate the advantage of PG k-means over iPQ with Quant-Noise for the MNLI task, validating the viability of PG k-means as an effective approach for extreme model compression.
+* The approach presented in the paper is not limited to NLP tasks and can be applied to any architecture and target application. The authors suggest that further research is needed to validate the approach's viability for extreme compression outside of NLP tasks.
+</p></details>
+
+[Is Pre-training Truly Better Than Meta-Learning?](https://arxiv.org/pdf/2306.13841.pdf) <details><summary>Summary</summary><p>
+* The paper compares the performance of pre-training (PT) and meta-learning (MAML) approaches in few-shot learning tasks.
+* The authors use statistical methods, including effect size, to analyze the results and determine the practical significance of the differences observed.
+* The study finds that PT is slightly better than MAML for low diversity datasets, but MAML outperforms PT in high diversity datasets. The choice between PT and MAML depends on the specific dataset and task at hand.
+</p></details>
+
+[Pruning for Better Domain Generalizability](https://arxiv.org/pdf/2306.13237.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a novel pruning method called DSS (Domain Similarity Score) that focuses on enhancing the generalization accuracy of models. DSS evaluates the activation maps of samples from different domains at each layer and prunes channels with the lowest DSS. This method outperforms the existing L2 pruning method and significantly improves the baseline performance.
+* The effectiveness of the proposed DSS score is validated through empirical studies on multiple datasets and model architectures. The experiments demonstrate that by sparsifying 60% of the channels in the model, the baseline performance can be improved by more than 5 points. Additionally, combining DSS with the state-of-the-art work MIRO leads to a 1 point improvement in performance.
+* The paper highlights the importance of domain generalization in machine learning and discusses various existing approaches, such as minimizing feature divergences, robust optimization, and augmenting source domain examples. The proposed DSS method offers a promising solution to enhance the generalization ability of models and improve their performance across different domains.
+</p></details>
+
+[Constraint-aware and Ranking-distilled Token Pruning for Efficient Transformer Inference](https://arxiv.org/pdf/2306.14393.pdf) <details><summary>Summary</summary><p>
+* The paper addresses the challenge of deploying pre-trained transformer models in resource-constrained scenarios. It focuses on improving the online inference speed of these models while maintaining accuracy.
+* The authors propose a method called Token Pruning (ToP) to selectively remove unnecessary tokens from the input sequence. By considering constraints and ranking information, ToP efficiently prunes tokens, reducing the computational burden during inference.
+* ToP incorporates a ranking-distilled token distillation technique, which helps identify important tokens for accurate predictions. This technique ensures that the pruned tokens do not significantly impact the model's performance, resulting in faster inference without sacrificing accuracy.
+</p></details>
+
+[Low-Rank Prune-And-Factorize for Language Model Compression](https://arxiv.org/pdf/2306.14152.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a novel approach called Low-Rank Prune-And-Factorize (LPAF) for language model compression. LPAF combines network pruning and matrix factorization techniques to achieve more effective model compression for pre-trained language models (PLMs).
+* The proposed LPAF method achieves significant reductions in model size and computational complexity (FLOPs) while maintaining a high level of performance. Experiments on GLUE and question-answering tasks demonstrate a 2x-6x reduction in model size and FLOPs, while retaining 99.8%-96.2% of the original BERT model's performance.
+* The paper presents two key techniques: sparsity-aware SVD for improved initialization and mixed-rank fine-tuning for enhanced training during the compression process. These techniques contribute to the superior compression-performance trade-off achieved by LPAF compared to existing compression methods.
+</p></details>
+
+[Adaptive Sharpness-Aware Pruning for Robust Sparse Networks](https://arxiv.org/pdf/2306.14306.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a new method called Adaptive Sharpness-Aware Pruning (AdaSAP) that yields robust sparse networks, achieving strong performance in a comprehensive set of experiments.
+* AdaSAP optimizes the loss landscape to achieve robustness and compactness in deep learning models through a three-phase procedure that involves adaptive weight perturbation, neuron removal, and robustness encouragement.
+* AdaSAP outperforms recent pruning art in terms of performance and margin of improvement, achieving specific improvements in accuracy for classification on ImageNet and object detection on Pascal VOC datasets.
+</p></details>
+
+[Towards Understanding Gradient Approximation in Equality Constrained Deep Declarative Networks](https://arxiv.org/pdf/2306.14054.pdf) <details><summary>Summary</summary><p>
+* The paper investigates approximations to gradient calculations for differentiable constrained optimization problems, with a focus on continuous optimization problems embedded within deep learning models.
+* The authors explore conditions for approximating the gradient of a deep declarative node, which can be computationally more efficient than the true gradient calculation, and provide theoretical analysis and examples where the approximation works well in practice, as well as cautionary tales for when it fails.
+* The paper distinguishes between computing search directions for backpropagation through discrete optimization problems where a true gradient does not exist or is uninformative, and computing the gradient of a solution with respect to parameters of the problem for continuous constrained optimization problems.
+</p></details>
+
+[H$`_2`$O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models](https://arxiv.org/pdf/2306.14048.pdf) <details><summary>Summary</summary><p>
+* Introduction of H2O: Heavy-Hitter Oracle: The paper introduces H2O, a novel approach for optimizing the storage of transient state information, known as the KV cache, in GPU memory. H2O identifies the tokens that contribute the most value when computing attention scores, resulting in significant memory reduction for LLMs.
+* Impact of LLMs on cost: The paper highlights the cost implications of deploying applications involving long-content generation using LLMs. By reducing the memory requirements of LLMs, H2O helps mitigate the high costs associated with these models, making them more feasible for deployment.
+* Potential applications and future prospects: The paper discusses the potential applications of H2O in various domains, such as natural language processing, text generation, and machine translation. It also suggests avenues for future research and development in optimizing LLMs for memory efficiency.
+</p></details>
+
+[A Unified Approach to Controlling Implicit Regularization via Mirror Descent](https://arxiv.org/pdf/2306.13853.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a unified approach to controlling implicit regularization in optimization algorithms, specifically focusing on mirror descent. It explores the impact of optimization algorithms on generalization performance in overparameterized models.
+* Mirror descent is a different optimization algorithm compared to gradient descent. It offers a way to control implicit regularization by incorporating a potential function that influences the update steps. This allows for more flexibility in shaping the regularization properties of the algorithm.
+* The paper demonstrates the convergence of mirror descent with homogeneous potential functions to a generalized maximum-margin solution for linear classification problems. This finding highlights the effectiveness of mirror descent in achieving desirable regularization properties in classification tasks.
+</p></details>
+
+[QNNRepair: Quantized Neural Network Repair](https://arxiv.org/pdf/2306.13793.pdf) <details><summary>Summary</summary><p>
+* This paper introduces QNNRepair, the first method in the literature for repairing quantized neural networks (QNNs) and improving their accuracy. QNNRepair aims to enhance the performance of QNN models after quantization by formulating the repair problem into a linear programming problem.
+* QNNRepair identifies the neurons causing performance degradation during neural network quantization by analyzing failing tests. It uses a ranking procedure that considers metrics such as Tarantula, Ochiai, DStar, Jaccard, Ample, Euclid, and Wong3 to determine the suspiciousness scores of statements in the network.
+* The experimental evaluation of QNNRepair involves various neural network architectures and datasets. It is compared with the state-of-the-art data-free quantization method SQuant. The results demonstrate the effectiveness of QNNRepair in improving the quantized model's performance in most cases.
+</p></details>
+
+[Near-Optimal Fully First-Order Algorithms for Finding Stationary Points in Bilevel Optimization](https://arxiv.org/pdf/2306.14853.pdf) <details><summary>Summary</summary><p>
+* Improved analysis of first-order method: The paper presents an improved analysis of a first-order method for bilevel optimization problems. The method is capable of finding an ǫ-first-order stationary point within a near-optimal oracle complexity. This analysis enhances our understanding of the algorithm's performance and efficiency.
+* Application in different scenarios: The authors discuss the application of these algorithms in finding second-order stationary points and in distributed bilevel problems. This demonstrates the versatility and usefulness of the first-order method in various scenarios, expanding its potential applications beyond traditional bilevel optimization problems.
+* Near-optimal oracle complexity: The concept of near-optimal oracle complexity is introduced and emphasized in the paper. It refers to the efficiency of the algorithm in terms of the number of oracle calls required to find a near-optimal solution. The authors show that their first-order method achieves near-optimal oracle complexity, highlighting its effectiveness in solving bilevel optimization problems efficiently.
+</p></details>
+
+[Nonconvex Stochastic Bregman Proximal Gradient Method with Application to Deep Learning](https://arxiv.org/pdf/2306.14522.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a family of stochastic Bregman proximal gradient (SBPG) methods that address the issue of Lipschitz smoothness in minimizing nonconvex composite objective functions in deep learning.
+* The SBPG methods provide a better approximation model and capture the non-Lipschitz gradients of the nonconvex objective, resulting in improved convergence properties and robustness in training deep neural networks.
+* The paper presents experimental results on quadratic inverse problems and training deep neural networks with a polynomial kernel function to validate the effectiveness and robustness of the SBPG methods.
+</p></details>
+
+[G-TRACER: Expected Sharpness Optimization](https://arxiv.org/pdf/2306.13914.pdf) <details><summary>Summary</summary><p>
+* The paper introduces G-TRACER, a regularization scheme for deep learning architectures that promotes generalization by seeking flat minima.
+* G-TRACER is based on a theoretical approximation to a natural-gradient descent optimization and has a sound theoretical basis as an approximation to a generalized Bayes objective.
+* The authors demonstrate the effectiveness of G-TRACER on various benchmark datasets in computer vision and NLP, particularly in low signal-to-noise ratio problems.
+</p></details>
+
+[Computron: Serving Distributed Deep Learning Models with Model Parallel Swapping](https://arxiv.org/pdf/2306.13835.pdf) <details><summary>Summary</summary><p>
+* Computron is a system designed to serve multiple distributed deep learning models on a shared GPU cluster. It utilizes model parallel swapping to optimize resource utilization and reduce the time taken to load models into GPU memory.
+* The system is capable of handling bursty and skewed request patterns, which are common in real-world scenarios. It demonstrates improved performance as the coefficient of variation (CV) increases, suggesting that Computron performs better with bursty request distributions.
+* The PDF discusses the challenges and solutions related to ordering, synchronization, and parallelized swapping on multiple GPUs. It also highlights the potential benefits of speculative model loading or offloading as an optimization to further enhance serving performance.
+</p></details>
+
+[A new approach to generalisation error of machine learning algorithms: Estimates and convergence](https://arxiv.org/pdf/2306.13784.pdf) <details><summary>Summary</summary><p>
+* The paper proposes a novel perspective on generalisation error and convergence analysis of machine learning algorithms. The main goal is to provide generalisation error control and detailed convergence analysis under weak assumptions.
+* The authors utilize two key components to derive error bounds: the representation of discrete loss through empirical measures and the estimation of terms using Wasserstein distances. These estimates allow for control of generalisation error for each instance of the algorithm and for the expected value over all possible samples.
+* The analysis in this paper is conducted in a non-standard setting, considering the probabilistic nature of the model and the separation of sources of discretization. The authors make use of the representation of loss through empirical measures and a crucial result related to the relative compactness of measures from a previous study by Ambrosio et al. (2005).
+</p></details>
+
+[The Deep Arbitrary Polynomial Chaos Neural Network or how Deep Artificial Neural Networks could benefit from Data-Driven Homogeneous Chaos Theory](https://arxiv.org/pdf/2306.14753.pdf) <details><summary>Summary</summary><p>
+* The paper introduces the concept of the deep arbitrary polynomial chaos neural network (DAPC-NN), which combines the multi-layer structure of neural networks with the theory of polynomial chaos expansion. This integration aims to enhance the performance of deep neural networks in various machine learning tasks.
+* The authors emphasize the potential benefits of using data-driven homogeneous chaos theory in deep neural networks. By introducing high-order weighted superposition on each node, the need for non-linearity through activation functions can be reduced, thereby minimizing subjectivity in the modeling process.
+* The paper acknowledges the challenge of determining the optimal architecture for deep multi-layer representations. The authors suggest that an adaptive strategy for setting up the network architecture, potentially utilizing the Bayesian framework, could improve performance. However, the computational intensity of direct Bayesian analysis may require reliance on approximate indicators and assumptions.
+</p></details>
+
+[Composing Parameter-Efficient Modules with Arithmetic Operations](https://arxiv.org/pdf/2306.14870.pdf) <details><summary>Summary</summary><p>
+* The paper proposes a method for composing parameter-efficient modules through linear arithmetic operations in the weight space, which allows for flexible module composition without additional training.
+* The approach has various applications, including distribution generalization, multi-tasking, unlearning, and domain transfer.
+* The effectiveness of the proposed method is demonstrated through empirical results, including the detoxification of Alpaca-LoRA, a language model based on LLaMA.
+</p></details>
+
 ## June 26, 2023
 
 [GKD: Generalized Knowledge Distillation for Auto-regressive Sequence Models](https://arxiv.org/pdf/2306.13649.pdf) <details><summary>Summary</summary><p>
