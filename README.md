@@ -18,6 +18,74 @@ Feel free to submit PR if you can summarize them better.
 
 Disclaimer: We're not affiliated with arXiv.
 
+## June 28, 2023
+
+[SparseOptimizer: Sparsify Language Models through Moreau-Yosida Regularization and Accelerate through Compiler Co-design](https://arxiv.org/pdf/2306.15656.pdf) <details><summary>Summary</summary><p>
+* The paper introduces SparseOptimizer, a deep learning optimizer that induces sparsity in large language models like BERT, ALBERT, and GPT.
+* SparseOptimizer enables efficient and adaptable sparsification without the need for code modifications, and empirical evaluations demonstrate that SparseBERT and SparseALBERT achieve comparable performance to their dense counterparts while significantly reducing parameter count.
+* The paper proposes an optimizer-compiler co-design strategy that showcases the potential of inference acceleration when paired with a well-designed compiler.
+</p></details>
+
+[Extending Context Window of Large Language Models via Positional Interpolation](https://arxiv.org/pdf/2306.15595.pdf) <details><summary>Summary</summary><p>
+* This paper explores how Position Interpolation (PI) can significantly increase the context window sizes of pretrained LLMs, such as LLaMA models, while maintaining strong performance on various tasks that require long context.
+* The authors fine-tuned the extended LLaMA models on various benchmark tasks, including long document summarization, and found that models extended to longer context windows performed better on the benchmarks.
+* The authors' method of extending the context window with PI is complementary to other works that augment LLMs with retrieval modules, and their method may be more versatile as it can natively handle tasks beyond retrieval oriented ones.
+</p></details>
+
+[Homological Neural Networks: A Sparse Architecture for Multivariate Complexity](https://arxiv.org/pdf/2306.15337.pdf) <details><summary>Summary</summary><p>
+* The paper proposes a novel deep neural network unit called Homological Neural Networks (HNNs) with a sparse higher-order graphical architecture to address the challenges of computational complexity, energy efficiency, and interpretability in deep learning models.
+* The authors demonstrate the effectiveness of HNNs in tabular data and time series regression problems, surpassing state-of-the-art models with fewer parameters.
+* The proposed methodology exploits the power of a specific class of Information Filtering Networks (IFNs), namely the Triangulated Maximally Filtered Graph (TMFG), which is a maximally planar chordal graph with a clique-three structure made of tetrahedra.
+</p></details>
+
+[From $`O(\sqrt n)`$ to $`O(\log n)`$ in Quadratic Programming](https://arxiv.org/pdf/2306.15079.pdf) <details><summary>Summary</summary><p>
+* This paper introduces a new optimization algorithm for quadratic programming with an O(log(n)) iteration complexity, which is a significant breakthrough in numerical optimization.
+* The algorithm proposed in this paper solves box-constrained QP, which is a common type of optimization problem, and has features such as no pain and no cost in finding a strictly feasible initial point, simplicity in implementation, and deterministic iteration complexity.
+* The algorithm has potential applications in the era of big data and artificial intelligence, where scalability is crucial.
+</p></details>
+
+[A Survey on Deep Learning Hardware Accelerators for Heterogeneous HPC Platforms](https://arxiv.org/pdf/2306.15552.pdf) <details><summary>Summary</summary><p>
+* The paper provides an overview of the latest advancements in hardware accelerators for deep learning, which have become the most effective solution for many high-performance applications such as image classification, computer vision, and speech recognition.
+* The paper explores different types of accelerators, including those based on GPUs, TPUs, FPGAs, ASICs, and Neural Processing Units, and highlights their similarities and differences based on several representative features.
+* The paper selectively chooses the most notable and influential works in each sub-category and focuses on their innovative contributions, providing a comprehensive summary of the latest innovations in the field of hardware accelerators for deep learning.
+</p></details>
+
+[Length Generalization in Arithmetic Transformers](https://arxiv.org/pdf/2306.15400.pdf) <details><summary>Summary</summary><p>
+* The paper explores the challenges faced by transformers in learning basic integer arithmetic and generalizing to longer sequences than those encountered during training.
+* The authors show that priming, a technique that involves training a model on a small set of examples before fine-tuning it on a larger set, can help transformers generalize to longer sequences in multiplication tasks.
+* The paper discusses potential applications of priming beyond arithmetic and highlights the importance of further research in this area.
+</p></details>
+
+[Revisiting Tropical Polynomial Division: Theory, Algorithms and Application to Neural Networks](https://arxiv.org/pdf/2306.15157.pdf) <details><summary>Summary</summary><p>
+* This paper explores the concept of tropical polynomial division and its application to neural networks. It provides a new perspective on the problem, including the existence of a unique quotient-remainder pair and the characterization of the quotient in terms of the convex bi-conjugate of a related function.
+* The paper presents both an exact algorithm and an approximate algorithm for tropical polynomial division. The exact algorithm ensures precise division, while the approximate algorithm offers a more efficient approach based on data partition and linear programming.
+* The efficiency and effectiveness of the proposed algorithms are demonstrated through numerical examples using the MNIST handwritten digit and CIFAR-10 datasets. The results showcase the potential of tropical polynomial division in enhancing the performance of neural networks.
+</p></details>
+
+[Scaling and Resizing Symmetry in Feedforward Networks](https://arxiv.org/pdf/2306.15015.pdf) <details><summary>Summary</summary><p>
+* Chaos/Order Phase Transition: The paper explores the existence of a phase transition in the space of variances of random weights and biases in deep neural networks. It demonstrates that there is a critical line along which the convergence speed of learning maps is optimized. This phase transition has implications for the initialization of neural networks and can significantly impact their learning performance.
+* Scaling Symmetry: The author discusses the concept of scaling symmetry, which arises at criticality in untrained feedforward networks. This symmetry allows for the resizing of a large network into a smaller one without compromising learning performance. It provides insights into the relationship between network size and learning capabilities, potentially enabling more efficient and scalable neural network architectures.
+* Connections to Statistical Physics: The paper draws connections between neural networks and statistical physical systems. It highlights the similarities between the phase transition in random networks and well-known properties of physical phase transitions, such as scaling symmetry. The author also mentions other works that have explored the correspondence between neural networks and statistical physics, suggesting further avenues for research and investigation.
+</p></details>
+
+[The Underlying Scaling Laws and Universal Statistical Structure of Complex Datasets](https://arxiv.org/pdf/2306.14975.pdf) <details><summary>Summary</summary><p>
+* The authors investigate the underlying structure of complex datasets, both real-world and artificially generated, by applying tools from statistical physics and Random Matrix Theory (RMT). They analyze the feature-feature covariance matrix and examine the local and global eigenvalue statistics.
+* The study reveals universal traits in complex datasets, including power-law scalings of eigenvalues. The authors compare the eigenvalue distributions of uncorrelated random data and real-world data, highlighting the differences between them.
+* The paper explores the correlation between Shannon entropy and RMT structure, and its impact on the scaling behavior of eigenvalues. The authors discuss the significance of datasets belonging to the same universality class as chaotic systems, as observed from the perspective of Random Matrix Theory.
+</p></details>
+
+[Limited-Memory Greedy Quasi-Newton Method with Non-asymptotic Superlinear Convergence Rate](https://arxiv.org/pdf/2306.15444.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a limited-memory greedy BFGS method that achieves a non-asymptotic superlinear convergence rate. This method addresses the storage issue associated with traditional quasi-Newton methods by incorporating displacement aggregation and a basis vector selection scheme.
+* The limited-memory variant of the BFGS method reduces computational cost and memory requirement while maintaining the desirable convergence properties. This makes it more practical and efficient for solving optimization problems.
+* The paper provides theoretical analysis and numerical experiments to demonstrate the effectiveness and efficiency of the proposed method. It offers insights into the convergence behavior and performance of the limited-memory greedy BFGS method, showcasing its potential for various applications in numerical optimization.
+</p></details>
+
+[GloptiNets: Scalable Non-Convex Optimization with Certificates](https://arxiv.org/pdf/2306.14932.pdf) <details><summary>Summary</summary><p>
+* Novel Approach: The paper proposes a new approach to global optimization with certificates that significantly expands the range of functions that can be optimized. Unlike previous methods limited to polynomials, this approach can be applied to any function for which the Fourier transform can be computed.
+* Efficient and Flexible: The proposed approach is designed for efficient GPU computations and offers refined control over time and memory requirements. Unlike traditional polynomial-based methods, which have rigid complexity scaling with dimension and degree, this approach provides more flexibility and scalability.
+* Improved Results and Applications: The paper presents improved results compared to previous work, including a fast stochastic approach for recovering certificates with high probability. The formulation of the problem is also generalized to incorporate powerful techniques from deep neural networks (DNN). In practical applications, this approach can provide certificates for functions in moderate dimensions, surpassing the capabilities of current state-of-the-art techniques.
+</p></details>
+
 ## June 27, 2023
 
 [The Double Helix inside the NLP Transformer](https://arxiv.org/pdf/2306.13817.pdf) <details><summary>Summary</summary><p>
