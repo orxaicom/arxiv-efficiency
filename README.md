@@ -18,6 +18,62 @@ Feel free to submit PR if you can summarize them better.
 
 Disclaimer: We're not affiliated with arXiv.
 
+## June 29, 2023
+
+[Empirical Loss Landscape Analysis of Neural Network Activation Functions](https://arxiv.org/pdf/2306.16090.pdf) <details><summary>Summary</summary><p>
+* The paper investigates the impact of different activation functions on the loss landscape of neural networks using a loss-gradient cloud visualization technique.
+* The study finds that all activation functions exhibit wide and narrow valleys in the loss landscape, with narrow valleys associated with saturated neurons and implicitly regularized neural network configurations.
+* The paper concludes that the choice of activation function does not affect the loss landscape modality, but does impact the convexity, flatness, and generalization performance of the loss landscape. Specifically, the rectified linear unit activation function exhibits the highest degree of convexity, while the exponential linear unit activation function yields a loss landscape that is resilient to overfitting.
+</p></details>
+
+[KAPLA: Pragmatic Representation and Fast Solving of Scalable NN Accelerator Dataflow](https://arxiv.org/pdf/2306.15676.pdf) <details><summary>Summary</summary><p>
+* The paper addresses the lack of a comprehensive and unified framework for capturing the design space of existing neural network (NN) dataflow schemes and the need for efficient scheduling algorithms. It highlights the complexity of the design space, which includes multiple chips/chiplets/tiles and thousands of processing elements, as well as memory hierarchy levels.
+* The authors propose comprehensive and pragmatic dataflow representations for dense NNs, covering a wide range of temporal and spatial dataflow schemes at both inter-layer and intra-layer levels. These representations support both training and inference workloads, providing a rich set of options for design exploration.
+* To overcome the limitations of existing scheduling algorithms, the authors introduce KAPLA, a generic, optimized, and fast dataflow solver. KAPLA enables effective exploration of the design space, with validity checks and efficiency estimation. It achieves impressive energy overheads for both training and inference, making it a valuable tool for scalable NN architectures.
+</p></details>
+
+[FLuRKA: Fast fused Low-Rank & Kernel Attention](https://arxiv.org/pdf/2306.15799.pdf) <details><summary>Summary</summary><p>
+* FLuRKA (Fast Low-Rank & Kernel Attention) is a new class of transformers that combines the strengths of low-rank and kernel methods. It aims to provide significant performance gains and high-quality results in self-attention techniques.
+* The paper presents theoretical and empirical evaluations of FLuRKA. It demonstrates impressive speedups of up to 3.3x and 1.7x over low-rank and kernel methods, respectively, and up to 30x over models with full-attention. FLuRKA also achieves comparable accuracy to low-rank and kernel methods on the GLUE benchmark after pre-training on wiki-tex.
+* The experiments in the paper address research questions related to the performance gains of FLuRKA on modern hardware and its ability to match the quality of low-rank and kernel methods across various tasks. The results show that FLuRKA variants can realize these performance gains and achieve similar quality to other methods.
+</p></details>
+
+[Evaluation of OpenAI Codex for HPC Parallel Programming Models Kernel Generation](https://arxiv.org/pdf/2306.15121.pdf) <details><summary>Summary</summary><p>
+* The paper evaluates the generative capabilities of OpenAI Codex for HPC parallel programming, exploring various programming models and languages, including C++, Fortran, Python, and Julia.
+* The study proposes a metric to assess the proficiency of the generated kernel codes and highlights the correlation between the outputs of OpenAI Codex and the adoption and maturity of programming models.
+* The results of the evaluation provide insights into the current status of the correctness, trade-offs, and overall value of LLMs for HPC practitioners who wish to adopt this technology.
+</p></details>
+
+[Beyond NTK with Vanilla Gradient Descent: A Mean-Field Analysis of Neural Networks with Polynomial Width, Samples, and Time](https://arxiv.org/pdf/2306.16361.pdf) <details><summary>Summary</summary><p>
+* The paper presents a mean-field analysis of projected gradient flow on two-layer neural networks. This analysis is significant because it demonstrates that unmodified gradient descent can achieve better sample complexity than kernel methods, without requiring any unnatural modifications to the optimization algorithm.
+* The authors provide a proof of the main theorem for the population case, along with additional lemmas and helper lemmas to support their analysis. These proofs can be found in Section B of the paper.
+* The paper also includes a summary of four cases, which likely provide different scenarios or conditions for the analysis. However, the specific details of these cases are not provided in the given texts.
+</p></details>
+
+[Ordering for Non-Replacement SGD](https://arxiv.org/pdf/2306.15848.pdf) <details><summary>Summary</summary><p>
+* The paper explores the use of Non-Replacement SGD, an optimization algorithm in machine learning that aims to improve efficiency and reduce convergence rates.
+* The authors develop optimal orderings for Non-Replacement SGD and analyze their convergence rates for different step sizes and function types.
+* The results are verified through experiments on synthetic and real datasets, showing promising outcomes when combined with mini-batch techniques and applied to complex neural networks.
+</p></details>
+
+[Sparse Representations, Inference and Learning](https://arxiv.org/pdf/2306.16097.pdf) <details><summary>Summary</summary><p>
+* The paper discusses the application of statistical physics in solving large dimensional inference problems, particularly in the field of machine learning. It highlights the evolution of equilibrium statistical physics in the past fifty years, driven by advances in the theory of disordered systems.
+* The authors present a general framework that can be used to address a wide range of problems with weak long-range interactions. This framework incorporates the use of replica symmetric level analysis and the cavity method, also known as belief propagation. These techniques enable the study of fundamental limitations in problem solutions and provide algorithms for solving individual instances more efficiently.
+* The paper emphasizes the efficiency of the presented framework, as it allows for the examination of problems that typically require exponential computational expense relative to the number of variables. By utilizing approximate message passing algorithms, the complexity of these problems can be reduced to polynomial complexity. The framework is applicable to various scenarios, including compressed sensing and learning in a perceptron.
+</p></details>
+
+[MAT: Mixed-Strategy Game of Adversarial Training in Fine-tuning](https://arxiv.org/pdf/2306.15826.pdf) <details><summary>Summary</summary><p>
+* Introduction of Mixed-Strategy Adversarial Training (MAT): The paper introduces a novel algorithm called MAT, which incorporates mixed-strategy games into the fine-tuning stage of large-scale pre-trained language models. MAT aims to improve model generalization and robustness by considering a wider range of potential attacks during training.
+* Superior Performance: Through extensive benchmark experiments, MAT demonstrates superior performance compared to state-of-the-art methods. It achieves better generalization and robustness in natural language processing tasks, surpassing the limitations of pure-strategy games commonly used in adversarial training.
+* Nash Equilibrium and Methodology: The paper explains the methodology used to derive the Nash equilibrium of the mixed-strategy game for adversarial training in MAT. It provides insights into the mathematical foundations and optimization techniques employed to find the optimal strategies for both the model and the adversary.
+</p></details>
+
+[Time Regularization in Optimal Time Variable Learning](https://arxiv.org/pdf/2306.16111.pdf) <details><summary>Summary</summary><p>
+* This paper introduces the concept of time regularization in deep neural networks, specifically in the context of optimal time variable learning. It proposes the use of projection operators and additional constraints to enforce a time horizon in the learning problem.
+* The paper discusses two options for incorporating the time horizon constraint: using a quadratic penalty term in the loss function or setting specific values for the time step sizes. These approaches are aimed at optimizing the learning process and improving the performance of unconstrained optimization algorithms.
+* Additionally, the paper presents an adaptive pruning approach for Residual Neural Networks (RNNs). This approach reduces complexity and training time without sacrificing the expressiveness of the network. The effectiveness of the proposed methods is demonstrated through numerical results on the MNIST and Fashion MNIST datasets.
+</p></details>
+
 ## June 28, 2023
 
 [SparseOptimizer: Sparsify Language Models through Moreau-Yosida Regularization and Accelerate through Compiler Co-design](https://arxiv.org/pdf/2306.15656.pdf) <details><summary>Summary</summary><p>
