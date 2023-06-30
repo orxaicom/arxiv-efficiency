@@ -18,6 +18,86 @@ Feel free to submit PR if you can summarize them better.
 
 Disclaimer: We're not affiliated with arXiv.
 
+## June 30, 2023
+
+[Sparse Model Soups: A Recipe for Improved Pruning via Model Averaging](https://arxiv.org/pdf/2306.16788.pdf) <details><summary>Summary</summary><p>
+* The paper proposes a novel method called Sparse Model Soups (SMS) for merging sparse models into a single classifier, leveraging the idea of starting each prune-retrain phase of Iterative Magnitude Pruning (IMP) from an averaged model. SMS significantly enhances the performance of IMP in two ways: first, the average improves upon the individual models in terms of generalization performance and, secondly, the models retrained from an average exhibit better performance compared to those retrained from a single model.
+* The authors extend their findings to the pruning during training domain by incorporating SMS into magnitude-pruning based methods, yielding substantial performance improvements and enhancing their competitiveness in comparison with other state-of-the-art methods that sparsify during training.
+* The paper provides extensive experimental results on image classification, semantic segmentation, and neural machine translation architectures and datasets, demonstrating the effectiveness of SMS in improving the performance of sparse models.
+</p></details>
+
+[An Efficient Sparse Inference Software Accelerator for Transformer-based Language Models on CPUs](https://arxiv.org/pdf/2306.16601.pdf) <details><summary>Summary</summary><p>
+* The paper proposes an end-to-end solution for improving inference efficiency for Transformer-based language models on CPUs through structured sparsity and quantization.
+* The SpMM kernel developed in the paper outperforms existing sparse libraries and shows up to 5x speedup over a well-optimized dense library widely used in industry.
+* The authors plan to extend their software support to other CPU architectures and contribute their open-source solution to the Transformer ecosystem, as well as provide Transformer users with deployment choices for production with respect to performance per dollar on cloud.
+</p></details>
+
+[Tokenization and the Noiseless Channel](https://arxiv.org/pdf/2306.16842.pdf) <details><summary>Summary</summary><p>
+* The paper proposes a new information-theoretic approach to measuring the quality of tokenization schemes, based on the Rényi efficiency of the unigram distribution they produce.
+* The authors evaluate a large set of tokenization schemes with varying vocabulary sizes and produced by different algorithms, and find that the Rényi efficiency has a strong correlation with downstream model performance in machine translation, as measured by BLEU score.
+* The paper concludes that the proposed metric has practical benefits for intrinsic evaluation of tokenization functions, and that the principle of compression being connected with learnability can be applied to token distributions as well.
+</p></details>
+
+[A Formal Perspective on Byte-Pair Encoding](https://arxiv.org/pdf/2306.16837.pdf) <details><summary>Summary</summary><p>
+* The paper provides a formalization of Byte-Pair Encoding (BPE) as a combinatorial optimization problem, which contributes to our understanding of the algorithm and its applications in natural language processing.
+* The authors present a faster implementation of BPE and optimize the brute-force algorithm for optimal BPE using memoization, which improves the runtime complexity of the algorithm.
+* The PDF file aims to enhance the reader's understanding of BPE and its applications in natural language processing.
+</p></details>
+
+[Obeying the Order: Introducing Ordered Transfer Hyperparameter Optimisation](https://arxiv.org/pdf/2306.16916.pdf) <details><summary>Summary</summary><p>
+* The paper proposes a new method for hyperparameter optimization in transfer learning that takes into account the sequential order of tasks.
+* The proposed method outperforms state-of-the-art transfer HPO in gradually accumulating data settings.
+* The paper provides benchmarks to support the findings and suggests that the proposed method can reduce energy consumption and lead to more efficient model training.
+</p></details>
+
+[NeuralFuse: Learning to Improve the Accuracy of Access-Limited Neural Network Inference in Low-Voltage Regimes](https://arxiv.org/pdf/2306.16869.pdf) <details><summary>Summary</summary><p>
+* The paper proposes NeuralFuse, a non-intrusive post-hoc protection module for model inference against bit errors induced by low voltage in neural networks.
+* NeuralFuse significantly improves test accuracy while simultaneously enjoying up to 24% reduction in memory access energy, providing significant improvements in mitigating the energy-accuracy tradeoff of neural network inference in low-voltage regimes.
+* NeuralFuse is easy to implement and can be applied to various access-limited DNNs, demonstrating high transferability and versatility.
+</p></details>
+
+[Sampling weights of deep neural networks](https://arxiv.org/pdf/2306.16830.pdf) <details><summary>Summary</summary><p>
+* The paper presents a new approach to training neural networks that eliminates the need for iterative optimization and gradient computations.
+* The proposed method uses a probability distribution and an efficient sampling algorithm that leverages both input and output training data, offering robustness to data transformations and reducing the reliance on pre-processing techniques.
+* The authors demonstrate that their sampled networks achieve comparable accuracy to iteratively trained ones but can be constructed significantly faster.
+</p></details>
+
+[Towards a Better Theoretical Understanding of Independent Subnetwork Training](https://arxiv.org/pdf/2306.16484.pdf) <details><summary>Summary</summary><p>
+* A novel approach to analyzing distributed methods that combine data and model parallelism by operating with sparse submodels for a quadratic model.
+* The first analysis of independent subnetwork training in homogeneous and heterogeneous scenarios without restrictive assumptions on gradient estimators.
+* Identification of the settings when IST can optimize very efficiently or not converge to the optimal solution but only to an irreducible neighborhood that is also tightly characterized.
+</p></details>
+
+[DNA-TEQ: An Adaptive Exponential Quantization of Tensors for DNN Inference](https://arxiv.org/pdf/2306.16430.pdf) <details><summary>Summary</summary><p>
+* The paper proposes DNA-TEQ, an adaptive quantization scheme for DNNs that does not require re-training and quantizes weights and activations together. It aims to reduce hardware complexity and improve energy efficiency.
+* DNA-TEQ analyzes the distributions of activations and weights in different DNN models and finds the optimal parameters for the exponential representation of tensors. This minimizes quantization error and achieves the best trade-off between numerical precision and model accuracy.
+* Experimental results show that DNA-TEQ provides significant energy savings (66%) and compression (40%) with negligible accuracy loss. In some cases, model parameters can be represented by only 3 bits. DNA-TEQ is a promising approach for efficient DNN inference.
+</p></details>
+
+[Moreau Envelope Based Difference-of-weakly-Convex Reformulation and Algorithm for Bilevel Programs](https://arxiv.org/pdf/2306.16761.pdf) <details><summary>Summary</summary><p>
+* The paper proposes a new approach to solving bilevel programs with weakly convex lower level problems, which has important applications in machine learning and statistics.
+* The proposed algorithm is based on the Moreau envelope and difference of convex optimization, and it is demonstrated to be effective through numerical experiments on hyperparameter selection problems.
+* The paper provides theoretical analysis and proofs for the convergence of the proposed algorithm under certain assumptions on the functions involved in the bilevel program.
+</p></details>
+
+[Private Covariance Approximation and Eigenvalue-Gap Bounds for Complex Gaussian Perturbations](https://arxiv.org/pdf/2306.16648.pdf) <details><summary>Summary</summary><p>
+* The paper proposes a method for approximating a covariance matrix with a rank-k matrix under (ε, δ)-differential privacy using a complex variant of the Gaussian mechanism.
+* The proposed method improves on previous work in low-rank approximations by allowing for complex-valued data and perturbations.
+* The paper also explores the concept of eigenvalue gaps for random matrices and shows that they are of independent interest.
+</p></details>
+
+[Provable Advantage of Curriculum Learning on Parity Targets with Mixed Inputs](https://arxiv.org/pdf/2306.16921.pdf) <details><summary>Summary</summary><p>
+* The paper introduces a curriculum strategy for learning parities on mixed distributions, which involves training on sparse samples during the initial phase. This approach leads to a reduction in the number of required training steps and sample complexity compared to standard training methods.
+* The authors provide theoretical evidence to support the benefits of curriculum learning. They show a separation result in the number of training steps with standard learning rates on a common sample distribution. This suggests that presenting simpler examples before more complex ones can improve the efficiency of learning.
+* The experimental results presented in the paper further support the theoretical findings. The authors demonstrate that their curriculum strategy achieves better performance compared to standard training methods for certain functions with multiple monomials. This highlights the practical effectiveness of curriculum learning in improving learning outcomes.
+</p></details>
+
+[Boosting Distributed Machine Learning Training Through Loss-tolerant Transmission Protocol](https://arxiv.org/pdf/2305.04279.pdf) <details><summary>Summary</summary><p>
+* LTP addresses the long-tail latency issue caused by traffic patterns, leading to faster synchronization and improved training throughput.
+* LTP ensures training accuracy through data correction techniques, such as out-of-order transmission, out-of-order Acknowledges (ACKs), Early Close, and bubble-filling.
+* The evaluation results show that LTP outperforms traditional TCP congestion controls in terms of training speed, throughput, and accuracy, making it a promising solution for distributed machine learning training.
+</p></details>
+
 ## June 29, 2023
 
 [Empirical Loss Landscape Analysis of Neural Network Activation Functions](https://arxiv.org/pdf/2306.16090.pdf) <details><summary>Summary</summary><p>
