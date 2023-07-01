@@ -18,6 +18,10 @@ Feel free to submit PR if you can summarize them better.
 
 Disclaimer: We're not affiliated with arXiv.
 
+## July 1, 2023
+
+No new papers on arXiv
+
 ## June 30, 2023
 
 [Sparse Model Soups: A Recipe for Improved Pruning via Model Averaging](https://arxiv.org/pdf/2306.16788.pdf) <details><summary>Summary</summary><p>
