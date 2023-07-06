@@ -256,12 +256,6 @@ No new papers on arXiv
 * The study finds that PT is slightly better than MAML for low diversity datasets, but MAML outperforms PT in high diversity datasets. The choice between PT and MAML depends on the specific dataset and task at hand.
 </p></details>
 
-[Pruning for Better Domain Generalizability](https://arxiv.org/pdf/2306.13237.pdf) <details><summary>Summary</summary><p>
-* The paper introduces a novel pruning method called DSS (Domain Similarity Score) that focuses on enhancing the generalization accuracy of models. DSS evaluates the activation maps of samples from different domains at each layer and prunes channels with the lowest DSS. This method outperforms the existing L2 pruning method and significantly improves the baseline performance.
-* The effectiveness of the proposed DSS score is validated through empirical studies on multiple datasets and model architectures. The experiments demonstrate that by sparsifying 60% of the channels in the model, the baseline performance can be improved by more than 5 points. Additionally, combining DSS with the state-of-the-art work MIRO leads to a 1 point improvement in performance.
-* The paper highlights the importance of domain generalization in machine learning and discusses various existing approaches, such as minimizing feature divergences, robust optimization, and augmenting source domain examples. The proposed DSS method offers a promising solution to enhance the generalization ability of models and improve their performance across different domains.
-</p></details>
-
 [Constraint-aware and Ranking-distilled Token Pruning for Efficient Transformer Inference](https://arxiv.org/pdf/2306.14393.pdf) <details><summary>Summary</summary><p>
 * The paper addresses the challenge of deploying pre-trained transformer models in resource-constrained scenarios. It focuses on improving the online inference speed of these models while maintaining accuracy.
 * The authors propose a method called Token Pruning (ToP) to selectively remove unnecessary tokens from the input sequence. By considering constraints and ranking information, ToP efficiently prunes tokens, reducing the computational burden during inference.
